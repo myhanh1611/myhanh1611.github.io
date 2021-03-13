@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   
+#p1 {background-color:rgba(255,0,0,0.3);}
+#p2 {background-color:rgba(0,255,0,0.3);}
+#p3 {background-color:rgba(0,0,255,0.3);}
+#p4 {background-color:rgba(173, 221, 42, 0.3);}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #e482e4;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(24, 165, 175);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ddb6b6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(13, 37, 88);
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #e8f31d;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>VŨ THỊ MỸ HẠNH</h1>
+  <p>Học - Học nữa - Học mãi</p>
+</div>
+
+<div class="topnav">
+ <a href="about.html">GIỚI THIỆU GIA ĐÌNH </a>
+ 
+  <a href="contact.html">LIÊN HỆ</a>
+ 
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Giới thiệu bản thân</h2>
+    
+    <ul>
+        <li> Tôi năm nay 30 tuổi
+        </li>
+        <li>Tôi học từng học khoa Công trình - tại trường Đại học Thủy lợi</li>
+        <li>Công việc hiện tại: Kỹ sư thủy lợi</li>        <li>Cơ quan: Viện Quy hoạch Thủy lợi </li>
+        <li>Màu sắc yêu thích: Màu hồng</li>
+        <li>Sở thích: Đi du lịch</li>
+    </ul>
+    
+  </div>
+  
+  <div class= "column middle">
+    <h2>Mục tiêu học tập</h2>
+           <ol type="1">
+<li id="p1"> Hoàn thiện giao diện Web đơn giản</li>
+<li id="p2"> Biết chỉnh sửa từ trang Web có sẵn</li>
+<li id="p3"> Đưa đựa dữ liệu bản đồ lên Web:
+    <ul>
+        <li> Sử dụng bản đồ nền là goolemap</li>
+        <li>Đưa dữ liệu bản đồ dạng shp vào phần mềm quản lý dữ liệu postgress</li>
+        <li>Hiển thị bản đồ dưới bằng openlayer</li>
+        <li> Kích chọn hiển thị thuộc tính của các lớp dữ liệu</li>
+    </ul>
+    </li>
+<li> Sản phẩm mong muốn: <a href=""> <h3>Dự báo ngập lụt Bắc Nam Hà</h3></a>
+
+</li>
+  </div>
+  
+  <div class="column side">
+    <h2>Quê hương</h2>
+    <p>Tôi đến từ tỉnh Nam Định</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>HỌC ĐỂ TƯƠNG LAI TƯƠNG SÁNG HƠN</p>
+</div>
+  
+</body>
+</html>
