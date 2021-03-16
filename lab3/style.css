@@ -41,10 +41,13 @@ img {
     color: #000;
     word-spacing: normal;
     display: inline-block;
-    vertical-align: top;
     text-align: center;
 }
 
+div.item {
+    height: 150px;
+    padding: 10px;
+}
 /* Navigation */
 .menu-link {
     display: block;
@@ -95,5 +98,13 @@ footer {
     font-size: 14px;
     color: #ffffffda;
     text-align: center;
-   
+   padding: 10px;
+}
+.main-contact {
+    background-color: darkgray;
+ background-image: url(https://binhminhdigital.com/StoreData/images/PageData/8-ky-thuat-chu-anh-voi-nuoc-an-tuong-ma-ban-nen-biet-BinhMinhDigital.jpg);
+    font-style: normal;
+    font-size: 20px;
+    text-align: left;
+    padding: 80px;
 }
