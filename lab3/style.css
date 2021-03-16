@@ -60,7 +60,12 @@ div.item {
     background-color: rgb(56, 184, 243);
     color: #ffffff;
 }
+.anh {
+    height: 200px;
+    width: 220px;
 
+
+}
 
 /* Main content */
 .main {
