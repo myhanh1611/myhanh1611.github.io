@@ -24,7 +24,17 @@ ul {
   padding left: 20px;
   padding right: 20px;
 }
-.menu-item-item {
-    display: none;
+.sub-item {
+    position: relative;
+    display: block;
 }
+.sub-item-item {
+    display: none;
+    position: absolute;
+    top: 0ch;
+}
+.sub-item:hover .sub-item-item {
+    display: block;
+}
+
 
