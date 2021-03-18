@@ -37,8 +37,8 @@ ul {
 .sub-item {
     position: relative;
     display: block;
-    font-size: 13px;
-    width: 130px;
+    font-size: 14px;
+    width: 150px;
     background-color: rgba(212, 212, 211, 0.972);
     padding-left: 10px;
 }
@@ -48,7 +48,8 @@ ul {
     display: block;
     text-decoration: none;
     width: 130px;
-    height: 20px;
+    height: 30px;
+    line-height: 30px;
 }
 
 .link-item.active, .sub-item:hover .link-item {
@@ -67,7 +68,7 @@ ul {
 .sub-menu {
     display: none;
     position: absolute;
-    left: 130px;
+    left: 150px;
     top: 0;
     width: 130px;
     background-color: rgba(212, 212, 211, 0.972);
