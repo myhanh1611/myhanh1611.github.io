@@ -44,29 +44,29 @@
 //     } else { console.log( "Không là số nguyên tố") }
 
 // 5. VCT nhập vào 2 số a, b kiểm tra và in ra các số nguyên tố trong khoảng a -> b
-// let a = Number(prompt("nhập số bé:"));
-// let b = Number(prompt("nhập số lớn :"));
-// for (let n = a; n <= b; n++) {
-//   if (n < 2) {
-//     n = false;
-//   } else if (n == 2) {
-//     n = true;
-//   } else if (n % 2 == 0) {
-//     n = false;
-//   } else {
-//     for (let i = 3; i < n; i += 2) {
-//       if (n % i == 0) {
-//         n = false;
-//         break;
-//       } else {
-//         n = true;
-//       }
-//     }
-//   }
-//   if (n == true) {
-//     console.log("Số nguyên tố" + n);
-//   }
-// }
+let a = Number(prompt("nhập số bé:"));
+let b = Number(prompt("nhập số lớn :"));
+for (let n = a; n <= b; n++) {
+  if (n < 2) {
+    n = false;
+  } else if (n == 2) {
+    n = true;
+  } else if (n % 2 == 0) {
+    n = false;
+  } else {
+    for (let i = 3; i < n; i += 2) {
+      if (n % i == 0) {
+        n = false;
+        break;
+      } else {
+        n = true;
+      }
+    }
+  }
+  if (n == true) {
+    console.log("Số nguyên tố" + n);
+  }
+}
 
 // VCT in ra bảng cửu chương ngược(từ 10 -> 1)
 
@@ -78,13 +78,13 @@
 // }
 
 // VCT in ra chữ số đầu và cuối của một số. VD 12345 -> 15
-let n = Number(prompt("Nhap so"));
-soCuoi = n % 10;
-while (n > 10) {
-  n = n / 10;
-  soDau = parseInt(n);
-}
-console.log(soDau + "" + soCuoi);
+// let n = Number(prompt("Nhap so"));
+// soCuoi = n % 10;
+// while (n > 10) {
+//   n = n / 10;
+//   soDau = parseInt(n);
+// }
+// console.log(soDau + "" + soCuoi);
 
 // 2. VCT kiểm tra và in ra một số có phải số Palindrome hay không
 
@@ -105,3 +105,16 @@ console.log(soDau + "" + soCuoi);
 
 // 5. VCT kiểm tra và in ra một số có phải số Perfect hay không
 // 6. VCT kiểm tra và in ra một số có phải số Strong hay không
+
+// Viết hàm maxOfThree(a, b, c) nhận vào 3 số, in ra số lớn nhất
+// 2. Viết hàm max() nhập lượng số tùy ý in ra số lớn nhất
+// 3. Viết hàm isPrime(n) nhận vào 1 số, kiểm tra và in ra số đó có phải số nguyên tố hay không
+// kiem tra so nguyen to
+function isPrime(n) {
+  for (let i = 2; i < n / 2; i++) {
+    if (n % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}

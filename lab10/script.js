@@ -143,3 +143,31 @@ do {
   n = prompt("Giá trị nhập:");
   console.log(n, typeof n);
 } while (n !== null && n !== undefined);
+
+// Bài 7: Viêt chương trình nhập số lượng tùy ý dừng nhập neu input là null hoặc "". 
+//In ra số lớn  nhất và nhỏ nhất trong các số đã nhập
+let max;
+let min;
+
+for(let i = 0; ;i++){
+    let x = prompt("Mời bạn nhập số");
+
+    if(x == null || x == ""){
+        break;
+    }
+
+    if(i == 0){
+        max = x; 
+        min = x;
+    }
+
+    if(Number(x) > max){
+        max = x;
+    }
+
+    if(Number(x) < min){
+         min = x;
+    }
+}
+console.log("max = " + max);
+console.log("min = " + min);
