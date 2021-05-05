@@ -62,34 +62,40 @@ let salaries = {
 //     }
 // }
 // edit(salaries);
-// function minmax(obj) {
-//     let max = NaN, min = NaN, maxName, minName;
-//     // Khai bao oject rong
-//     let result = {};
+// Tìm gia tri lon nhat nho nhat
+function minmax(obj) {
+    let max = NaN, min = NaN, maxName, minName;
+    // Khai bao oject rong
+    let result = {};
     
-//     for (let i in obj) {
-//         if (obj[i] > max) {
-//             max = obj[i];
-//             maxName = i;
-//         }
-//         if (obj[i] < min) {
-//             obj[i] = min;
-//             minName = i;
-//         }
-//     }
-//     result[maxName] = max;
-//     result[minName] = min;
-//     return result;
-// }
-// minmax(salaries);
-
-function avg(obj) {
-    let sum = 0;
-    let dem = 0;
     for (let i in obj) {
-        sum += obj[i];
-        dem += 1
+        if (obj[i] > max) {
+            max = obj[i];
+            maxName = i;
+        }
+        if (obj[i] < min) {
+            obj[i] = min;
+            minName = i;
+        }
     }
-return sum/dem
-    }
-    avg(salaries);
+    result[maxName] = max;
+    result[minName] = min;
+    return result;
+}
+console.log(minmax(salaries))
+  
+
+
+
+
+// tim gia tri trung binh
+// function avg(obj) {
+//     let sum = 0;
+//     let dem = 0;
+//     for (let i in obj) {
+//         sum += obj[i];
+//         dem += 1
+//     }
+// return sum/dem
+//     }
+//     avg(salaries);
