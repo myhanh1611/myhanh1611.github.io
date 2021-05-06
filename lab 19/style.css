@@ -447,20 +447,46 @@ font-weight: 500;
 .mt-6 {
     width: 20px;
 }
-.nk-portfolio-item-image {
-     background-image: url(http://unvab.com/snow-free-html/assets/images/portfolio-4-sm.jpg);
-     background-image: url(http://unvab.com/snow-free-html/assets/images/bg-menu.jpg);
-      background-position: 50% 50%;
-      background-size: cover;
-    overflow: hidden;
-     width: 100%;
-}
-/* .nk-portfolio-list .nk-portfolio-item div.nk-portfolio-item-image {
+.nk-portfolio-item {
     position: relative;
-    display: block;
+
+    background-image: url(http://unvab.com/snow-free-html/assets/images/portfolio-4-sm.jpg);
+     background-size: cover;
+     background-position: 50%;
+     height: 350px;
+   
+}
+    
+.nk-portfolio-text {
+    position: absolute;
+    display: none;
     width: 100%;
-    padding-bottom: 80.34%;
-    background-position: 50% 50%;
-    background-size: cover;
-    overflow: hidden;
-} */
+    height: 350px;
+    z-index: 11;
+    transition-delay: 1s;
+    top: 0;
+    left: 0;
+}
+.portfolio-text-1  {
+  color: #d8d8d8;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 0px;
+    transition-delay: 1s;
+    margin-bottom: 0rem;
+  git
+}
+.portfolio-text-2  {
+  color: #d8d8d8;
+  text-align: center;
+font-weight: 500;
+padding-top: 10px;
+transition-delay: 1s;
+ 
+}
+.nk-portfolio-item:hover .nk-portfolio-text {
+    display: block;
+    background-color: rgba(9, 8, 8, 0.926);
+ 
+    
+}
