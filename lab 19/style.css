@@ -448,6 +448,10 @@ font-weight: 500;
 .mt-6 {
     width: 20px;
 }
+mnt-3 {
+    width: 20px;
+
+}
 .nk-portfolio-item {
     position: relative;
 
@@ -493,4 +497,9 @@ padding-top: 10px;
    height: 350px;
  
     
+}
+.Contact {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fafafa;
 }
